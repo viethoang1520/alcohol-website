@@ -1,0 +1,130 @@
+@import '../../Styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 90px;
+  background-color: $bg-primary;
+  z-index: 1000;
+
+  .header-block {
+    // height: calc(90px - 26px);
+    height: 100%;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      color: $text-secondary;
+      font-size: 2.3rem;
+    }
+
+    .middle-block {
+      font-family: Oswald, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 300;
+
+      .header-content-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        .header-item {
+          display: flex;
+          gap: 0.4rem;
+
+          .arrow-down {
+            font-weight: bold;
+            stroke-width: 4px;
+          }
+        }
+      }
+    }
+
+    .right-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .zalo-contact {
+        display: flex;
+        gap: 0.8rem;
+
+        .header-phone-icon {
+          font-size: 4rem;
+          color: $bg-secondary;
+        }
+
+        .contact-block {
+          font-size: 1.3rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+
+          .contact-text {
+            font-weight: 400;
+          }
+
+          .phone-number {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: $bg-secondary;
+          }
+        }
+      }
+
+      .icon-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .icon-wrapper {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e6e6e6;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+
+          .right-icon {
+            font-size: 1.5rem;
+            stroke-width: 9px;
+          }
+        }
+      }
+
+      .order-button {
+        font-family: Oswald, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #fff;
+        width: 160px;
+        height: 40px;
+        background-color: $bg-secondary;
+        border-radius: 25px;
+        min-width: 110px;
+        white-space: nowrap;
+        text-align: center;
+        
+      }
+
+      .order-button:hover {
+        min-width: 110px;
+        background-color: #d11242;
+        transition: 0.3s;
+      }
+    }
+  }
+
+}

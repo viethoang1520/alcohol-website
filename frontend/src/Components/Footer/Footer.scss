@@ -1,0 +1,35 @@
+.footer-upper {
+  .footer-block {
+    .footer-upper-block {
+      .mail-input {
+        width: 75%;
+      }
+
+      .mail-register {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        gap: 8px;
+      }
+
+      .connect-me-block {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 500;
+        align-items: center;
+        justify-content: space-between;
+
+        .facebook-icon {
+          font-size: 3.5rem;
+          // color: #3b5998;
+        }
+      }
+
+    }
+  }
+}
+.footer-middle{
+  height: 500px;
+}

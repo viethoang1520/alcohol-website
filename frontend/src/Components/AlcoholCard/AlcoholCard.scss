@@ -1,0 +1,81 @@
+@import '../../Styles/variables.scss';
+
+.alcohol-card {
+  .alcohol-image {
+    width: 100%;
+    height: 310px;
+    object-fit: scale-down;
+    border-radius: 10px;
+  }
+
+  .alcohol-name {
+    font-family: Oswald, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: $text-secondary;
+    height: 4rem;
+  }
+
+  .alcohol-rating {
+    font-size: 1.5rem;
+  }
+
+  .alcohol-price {
+    font-size: 1.5rem;
+    color: #d11242;
+    font-weight: 700;
+  }
+
+  .alcohol-content {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: #3ad925;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .buy-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .buy-button {
+      width: 75%;
+      height: 40px;
+      background-color: $bg-secondary;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding: 0 8px;
+      border-radius: 25px;
+      margin: 8px 0 0 8px;
+
+      .buy-content {
+        padding: 0 10px 0 0;
+      }
+
+      .buy-icon {
+        stroke-width: 1.5px;
+      }
+    }
+
+    .love-block {
+      .love-icon {
+        font-size: 3rem;
+        color: $text-secondary;
+        margin: 12px 0 0 0;
+      }
+
+      .love-icon-filled {
+        font-size: 3rem;
+        color: $text-secondary;
+        margin: 12px 0 0 0;
+      }
+    }
+  }
+
+}
