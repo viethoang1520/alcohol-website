@@ -4,7 +4,6 @@ import { Col, Row, Card, Pagination } from 'antd'
 import alcoholList from '../../data/alcoholList'
 import AlcoholCard from '../AlcoholCard/AlcoholCard';
 export default function AlcoholList({ category, description }) {
-  console.log(alcoholList)
   return (
     <div className='container alcohol-list'>
       <h1 className='alcohol-category'>RƯỢU TRẮNG</h1>

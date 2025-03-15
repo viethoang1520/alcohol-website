@@ -6,9 +6,6 @@ import axios from 'axios'
 import './AlcoholCard.scss';
 export default function AlcoholCard({ alcohol }) {
   const [isHeartClicked, setIsHeartClicked] = useState(false);
-  useEffect(() => {
-    console.log(isHeartClicked)
-  })
   const handleAddToCart = async () => {
       const res = await axios.post('http://localhost:3000/cart/add', {
         productID: 1,
