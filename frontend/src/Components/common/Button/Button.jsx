@@ -1,6 +1,6 @@
 import React from 'react'
-import './PrimaryButton.scss'  
-export default function PrimaryButton({ content, width, height, onClick, buttonType }) {
+import './Button.scss'  
+export default function Button({ content, width, height, onClick, buttonType }) {
   return (
     <div style={{
       width: `${width}px`,

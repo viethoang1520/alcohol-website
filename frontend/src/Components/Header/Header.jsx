@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.scss'
 import { Breadcrumb, Col, Row } from 'antd'
 import { Icon } from '@iconify/react'
@@ -7,14 +7,9 @@ import axios from 'axios'
 import Cart from '../Cart/Cart'
 
 export default function Header() {
-  const handleCart = async () => {
-    const res = await axios.get('http://localhost:3000/cart', { withCredentials: true })
-      .then(res => {
-        // console.log(res)
-      })
-      .catch(err => {
-        // console.log(err)
-      })
+  const [isCartClicked, setIsCartClicked] = useState(false);
+  const handleCartClicked = async () => {
+    setIsCartClicked(true)
   }
   return (
     <div className='header'>
@@ -75,7 +70,7 @@ export default function Header() {
             </li>
             <li >
               <div className="icon-wrapper cart-icon-wrapper">
-                <Icon onClick={handleCart} className='right-icon' icon="proicons:cart" />
+                <Icon onClick={handleCartClicked} className='right-icon' icon="proicons:cart" />
                 <div className="cart-wrapper">
                   <Cart/>
                 </div>

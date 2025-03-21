@@ -1,0 +1,13 @@
+.tag-container{
+  background-color: #f3f5f6;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .tag-content {
+    font-weight: 600;
+    font-family: Quicksand, sans-serif;
+    color: #3b3b3c;
+    font-size: 1.6rem;
+  }
+}

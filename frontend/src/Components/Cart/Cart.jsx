@@ -1,20 +1,28 @@
 import React from 'react'
 import './Cart.scss'
-import PrimaryButton from '../common/PrimaryButton/PrimaryButton'
+import Button from '../common/Button/Button'
+import Tag from '../common/Tag/Tag'
 
 export default function Cart() {
   return (
     <div className='cart-block'>
       <div className="button-block btn-cart">
-        <PrimaryButton
+        <Tag
           content="Giỏ hàng"
           height={40}
           width={380}
-          buttonType="secondary"
         />
       </div>
+      <div className="cart-item-container">
+
+      </div>
+      <hr />
+      <div className="total-bill">
+        <span className='total-bill-content total-bill-title'>TỔNG TIỀN:</span>
+        <span className='total-bill-content total-bill-price'>16,550,000đ</span>
+      </div>
       <div className="button-block ">
-        <PrimaryButton
+        <Button
           content="THANH TOÁN"
           width={380}
           height={45}

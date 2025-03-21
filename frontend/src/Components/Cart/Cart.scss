@@ -4,12 +4,34 @@
   background-color: #fff;
   box-shadow: 0 0 8px rgba(116, 116, 116, 0.5);
   border-radius: 2px;
+  padding: 20px;
   .button-block{
     display: flex;
     justify-content: center;
     align-items: center;
     &.btn-cart{
-      height: 75px;
+      margin: 0 0 20px 0;
+    }
+  }
+  .cart-item-container{
+    height: 320px;
+    background-color: aqua
+  }
+  .total-bill{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    .total-bill-content{
+      font-size: 16px;
+      &.total-bill-title{
+        font-size: 1.5rem;
+      }
+      &.total-bill-price{
+        font-size: 1.6rem;
+        color: #ff0b0b;
+        font-weight: 700;
+      }
     }
   }
 }
