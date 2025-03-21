@@ -4,6 +4,7 @@ import { Breadcrumb, Col, Row } from 'antd'
 import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Cart from '../Cart/Cart'
 
 export default function Header() {
   const handleCart = async () => {
@@ -72,9 +73,12 @@ export default function Header() {
                 <Icon className='right-icon' icon="mdi-light:heart" />
               </div>
             </li>
-            <li>
-              <div className="icon-wrapper">
+            <li >
+              <div className="icon-wrapper cart-icon-wrapper">
                 <Icon onClick={handleCart} className='right-icon' icon="proicons:cart" />
+                <div className="cart-wrapper">
+                  <Cart/>
+                </div>
               </div>
             </li>
           </ul>
