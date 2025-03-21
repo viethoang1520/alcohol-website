@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
+import TestPage from './pages/TestPage/TestPage'
 const theme = 'light-theme'
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/test-page' element={<TestPage />}></Route>
       </Routes>
     </div>
   )

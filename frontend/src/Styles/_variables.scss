@@ -12,6 +12,8 @@
     --completed-bg: #dfffeb;
     --deny-bg: #ff0000;
     --time-wrapper: rgba(0, 0, 0, 0.02);
+    --btn-bg-primary: #ff0000;
+    --btn-bg-secondary: #f3f5f6;
   }
 
   &.dark-theme {
@@ -40,6 +42,9 @@ $border: var(--border);
 $shadow: var(--shadow);
 $completed-bg: var(--completed-bg);
 $deny-bg: var(--deny-bg);
+$btn-bg-primary: var(--btn-bg-primary);
+$btn-bg-secondary: var(--btn-bg-secondary);
+        
 $time-wrapper-bg: var(--time-wrapper) //$text-secondary:
   //$text-muted:
   //$text-light:
