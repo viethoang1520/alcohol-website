@@ -9,7 +9,7 @@ import Cart from '../Cart/Cart'
 export default function Header() {
   const [isCartClicked, setIsCartClicked] = useState(false);
   const handleCartClicked = async () => {
-    setIsCartClicked(true)
+    setIsCartClicked(!isCartClicked)
   }
   return (
     <div className='header'>
@@ -69,9 +69,13 @@ export default function Header() {
               </div>
             </li>
             <li >
-              <div className="icon-wrapper cart-icon-wrapper">
-                <Icon onClick={handleCartClicked} className='right-icon' icon="proicons:cart" />
-                <div className="cart-wrapper">
+              <div onClick={handleCartClicked}  className={`icon-wrapper cart-icon-wrapper ${isCartClicked ? "clicked": ""}`}>
+                {isCartClicked ? (
+                  <Icon className='right-icon' icon="proicons:cart" />
+                ) : (
+                  <Icon icon="iconamoon:close-bold" width="24" height="24" />
+                )}
+                <div style={{display: isCartClicked ? "none": "block"}} className="cart-wrapper">
                   <Cart/>
                 </div>
               </div>
