@@ -72,9 +72,9 @@ export default function Header() {
               </div>
             </li>
             <li>
-              <div className="icon-wrapper">
+              <Link className="icon-wrapper">
                 <Icon className='right-icon' icon="mdi-light:heart" />
-              </div>
+              </Link>
             </li>
             <li >
               <div onClick={handleCartClicked} className={`icon-wrapper cart-icon-wrapper ${showCart ? "clicked": ""}`}>
