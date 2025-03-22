@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.scss'
 import { Breadcrumb, Col, Row } from 'antd'
 import { Icon } from '@iconify/react'
@@ -7,10 +7,18 @@ import axios from 'axios'
 import Cart from '../Cart/Cart'
 
 export default function Header() {
-  const [isCartClicked, setIsCartClicked] = useState(false);
-  const handleCartClicked = async () => {
-    setIsCartClicked(!isCartClicked)
+  const [showCart, setShowCart] = useState(false);
+  const handleCartClicked = async (e) => {
+    e.preventDefault()
+    // event.stopPropagation()
+    setShowCart(!showCart)
   }
+  const handleCartContent = (e) => {
+    e.stopPropagation()
+  }
+  useEffect(() => {
+    console.log(showCart)
+  },[showCart])
   return (
     <div className='header'>
       <Row className='container header-block'>
@@ -69,14 +77,14 @@ export default function Header() {
               </div>
             </li>
             <li >
-              <div onClick={handleCartClicked}  className={`icon-wrapper cart-icon-wrapper ${isCartClicked ? "clicked": ""}`}>
-                {isCartClicked ? (
-                  <Icon className='right-icon' icon="proicons:cart" />
-                ) : (
+              <div onClick={handleCartClicked} className={`icon-wrapper cart-icon-wrapper ${showCart ? "clicked": ""}`}>
+                {showCart ? (
                   <Icon icon="iconamoon:close-bold" width="24" height="24" />
+                ): (
+                  <Icon className='right-icon' icon="proicons:cart" />
                 )}
-                <div style={{display: isCartClicked ? "none": "block"}} className="cart-wrapper">
-                  <Cart/>
+                <div onClick={handleCartContent} className="cart-wrapper">
+                  <Cart show={showCart}/>
                 </div>
               </div>
             </li>

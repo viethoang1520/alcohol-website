@@ -3,9 +3,9 @@ import './Cart.scss'
 import Button from '../common/Button/Button'
 import Tag from '../common/Tag/Tag'
 
-export default function Cart() {
+export default function Cart({show}) {
   return (
-    <div className='cart-block'>
+    <div style={{ display: `${show ? 'block' : 'none'}` }} className='cart-block'>
       <div className="button-block btn-cart">
         <Tag
           content="Giỏ hàng"
