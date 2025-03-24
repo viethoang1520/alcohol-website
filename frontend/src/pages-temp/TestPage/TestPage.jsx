@@ -1,6 +1,6 @@
 import React from 'react'
-import Cart from '../../components/Cart/Cart'
 import './TestPage.scss'
+import Cart from '../../Components/Cart/Cart'
 
 export default function TestPage() {
   return (

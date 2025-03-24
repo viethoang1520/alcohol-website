@@ -90,7 +90,7 @@ export default function Footer() {
       </div>
       <hr />
       <div className="footer-below-block">
-        <h1><p>Copyright ©</p> <p style={{color: "red"}}>2025 HOANGDUONG.VN. Powered by HOANGDUONG.VN</p></h1>
+        <h1>Copyright © 2025 <p className='footer-below-block-decoration'>HOANGDUONG.VN. Powered by HOANGDUONG.VN</p></h1>
       </div>
     </>
 

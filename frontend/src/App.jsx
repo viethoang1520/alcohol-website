@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home/Home'
-import Login from './Pages/Login/Login'
+import Home from './pages/Home/Home'
+import Login from './pages/Login/Login'
 import TestPage from './pages/TestPage/TestPage'
 const theme = 'light-theme'
 import AOS from 'aos';
