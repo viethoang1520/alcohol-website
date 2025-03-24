@@ -38,10 +38,59 @@ export default function Footer() {
       <div className="footer-middle">
         <Row className='container'>
           <Col xs={24} md={10}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ab ratione placeat laudantium. Distinctio neque deserunt corporis doloribus vel dolor, tempore natus quo rem perferendis nostrum ipsam corrupti atque necessitatibus!
+            <div className='footer-middle-logo'> HOÀNG DƯƠNG </div>
+            <br />
+            <p>HOANGDUONG.VN chuyên phân phối sỉ và lẻ các loại Vang, Bia từ các nước trên thế giới. Với sứ mệnh lan tỏa văn hóa ẩm thực rượu vang tới nhiều người Việt hơn nữa. HOANGDUONG.VN luôn nỗ lực tìm kiếm và phân phối các dòng Vang cao cấp với giá cả tốt nhất đến người tiêu dùng Việt.</p>
           </Col>
-          <Col xs={24} md={14}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facilis suscipit dolorum. Eligendi repellat reiciendis quae deserunt obcaecati aut, delectus temporibus voluptatem ea architecto sit laborum odit? Iure, cumque. Ratione.</Col>
+          <Col xs={24} md={14}>
+            <Row>
+              <Col xs={24} md={8} lg={8} xl={8}>
+                <ul>
+                  <li className='footer-item-title'>CHÍNH SÁCH</li>
+                  <li>TÌM KIẾM</li>
+                  <li>ĐỔI TRẢ</li>
+                  <li>CHÍNH SÁCH BẢO MẬT</li>
+                  <li>CHÍNH SÁCH ĐỔI TRẢ</li>
+                  <li>ĐIỀU KHOẢN DỊCH VỤ</li>
+                  <li>LIÊN HỆ</li>
+                </ul>
+              </Col>
+              <Col xs={24} md={8} lg={8} xl={8}>
+                <ul>
+                  <li className='footer-item-title'>SẢN PHẨM</li>
+                  <li>SẢN PHẨM KHUYẾN MÃI</li>
+                  <li>SẢN PHẨM BÁN CHẠY</li>
+                  <li>SẢN PHẨM NỔI BẬT</li>
+                  <li>TẤT CẢ SẢN PHẨM</li>
+                  <li>SẢN PHẨM MỚI</li>
+                  <li>SẢN PHẨM CAO CẤP</li>
+                </ul>
+              </Col>
+              <Col xs={24} md={8} lg={8} xl={8}>
+                <ul>
+                  <li className='footer-item-title'>MENU</li>
+                  <li>TRANG CHỦ</li>
+                  <li>RƯỢU VANG</li>
+                  <li>RƯỢU MẠNH</li>
+                  <li>QUÀ TẶNG</li>
+                  <li>TIN TỨC</li>
+                </ul>
+              </Col>
+            </Row>
+          </Col>
         </Row>
+        <Row className='container'>
+          <Col className='footer-address' xs={24} md={10}>
+            <p> Địa chỉ: 107/6/5 Đường số 38, P. Hiệp Bình Chánh, TP. Thủ đức, TP. Hồ Chí Minh. Email: ruounhap.net@gmail.com | Hỗ trợ Hotline/Zalo/Wiber: 0906.648.244. Cam kết có trách nhiệm, đồng ý với các điều khoản của trang web này. Nội dung này dành cho những người trong độ tuổi uống rượu hợp pháp, vui lòng không chia sẻ hoặc chuyển tiếp cho bất kỳ ai chưa đủ tuổi vị thành niên. Đừng lái xe khi đã uống rượu, bia. Hãy thưởng thức có trách nhiệm, không bán rượu bia cho người dưới 18 tuổi.</p>
+          </Col>
+          <Col className='footer-map' xs={24} md={14}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus veritatis laborum ab iste incidunt cum maxime perspiciatis eveniet reiciendis quis, eius quos inventore eaque consequatur ad ut at id officia.
+          </Col>
+        </Row>
+      </div>
+      <hr />
+      <div className="footer-below-block">
+        <h1><p>Copyright ©</p> <p style={{color: "red"}}>2025 HOANGDUONG.VN. Powered by HOANGDUONG.VN</p></h1>
       </div>
     </>
 
