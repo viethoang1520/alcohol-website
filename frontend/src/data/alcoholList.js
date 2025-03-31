@@ -18,7 +18,7 @@ const alcoholList = [
   { "id": 17, "name": "Sherry Dry Classic", "price": 24.99, "rating": 4.2, "fileImage": "https://product.hstatic.net/200000506575/product/ruou-vang-pierre-larousse-chardonnay-brut_26bba48ac40e41ce89e5d2f528d2c5ec_large.jpg" },
   { "id": 18, "name": "Bourbon Oak Barrel", "price": 49.99, "rating": 4.9, "fileImage": "https://product.hstatic.net/200000506575/product/ruou-vang-pierre-larousse-chardonnay-brut_26bba48ac40e41ce89e5d2f528d2c5ec_large.jpg" },
   { "id": 19, "name": "Beer Pale Ale", "price": 10.99, "rating": 4.1, "fileImage": "https://product.hstatic.net/200000506575/product/ruou-vang-pierre-larousse-chardonnay-brut_26bba48ac40e41ce89e5d2f528d2c5ec_large.jpg" },
-  { "id": 20, "name": "Sake Rice Delight", "price": 33.99, "rating": 4.6, "fileImage": "https://product.hstatic.net/200000506575/product/ruou-vang-pierre-larousse-chardonnay-brut_26bba48ac40e41ce89e5d2f528d2c5ec_large.jpg" }
+  { "id": 20, "name": "Sake Rice Delight", "price": 33.99, "rating": 4.5, "fileImage": "https://product.hstatic.net/200000506575/product/ruou-vang-pierre-larousse-chardonnay-brut_26bba48ac40e41ce89e5d2f528d2c5ec_large.jpg" }
 ]
 
 
